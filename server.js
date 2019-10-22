@@ -20,7 +20,9 @@ app.use(
   })
 );
 app.use(router);
-var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var db =
+  process.env.MONGODB_URI ||
+  "mongodb://newsapp:Kolo1toure@ds137488.mlab.com:37488/heroku_q438j7gq";
 mongoose.connect(db, function(error) {
   if (error) {
     console.log(error);
